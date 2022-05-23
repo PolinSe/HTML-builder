@@ -16,8 +16,8 @@ readdir(path.join(__dirname, 'secret-folder'), { withFileTypes: true }, (err, fi
         }
         
         const size = (stats.size / 1024).toFixed(2) + 'kb';
-        console.log(path.parse(file.name).name + ' - ' + path.extname(file.name).replace(/[\s.]/g, '') + ' - ' + `${size}`)
-      })
-    }
-  }
+        console.log(path.parse(file.name).name + ' - ' + path.extname(file.name).replace(/[\s.]/g, '') + ' - ' + `${size}`);
+      });
+    };
+  };
 });
